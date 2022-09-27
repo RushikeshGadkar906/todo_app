@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .note_txt_block {}
+        
+        #target {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-3">Todo List</h1>
+        <div class="form-group row border mt-2 p-5">
+            <div class="col-sm-10">
+                <input type="text" placeholder="Note" id="note_txt" class="form-control">
+            </div>
+            <div class="col-sm-2">
+                <input type="button" class="btn btn-dark" id="addBtn" value="ADD" onclick="add_note()">
+                <input type="button" class="btn btn-dark" value="UPDATE" id="editBtn" style="display:none" onclick="edit_note()">
+            </div>
+        </div>
+        <div class="p-5 m-1 d-flex flex-column">
+            <ul id="target">
+
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <script src="js/todo.js"></script>
+</body>
+
+</html>
